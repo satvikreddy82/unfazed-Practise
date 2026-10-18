@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Production build outputs
+dist/
+build/
+*/dist/
+*/build/
+
+# Environment configuration (protect credentials)
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+!*/.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Testing artifacts
+coverage/
+*/coverage/

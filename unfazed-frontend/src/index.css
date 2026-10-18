@@ -1,0 +1,733 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   UNFAZED MASTER DESIGN SYSTEM & MULTI-THEME ENGINE
+   10 Handcrafted Presets (A-J) with Full Light & Dark Mode Token Specifications
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   THEME A: Emerald & Gold
+   Luxurious, trustworthy, premium
+   -------------------------------------------------------------------------- */
+:root,
+[data-theme="emerald_gold"][data-mode="light"] {
+  --color-primary: #047857;
+  --color-primary-hover: #065F46;
+  --color-secondary: #064E3B;
+  --color-accent: #D4AF37;
+  --color-accent-hover: #B89628;
+  --color-background: #FCFBF7;
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #F9F7F1;
+  --color-text: #111827;
+  --color-text-muted: #4B5563;
+  --color-border: #E5E1D8;
+  --color-success: #059669;
+  --color-warning: #D97706;
+  --color-danger: #DC2626;
+  --color-sidebar: #064E3B;
+  --color-sidebar-text: #ECFDF5;
+  --color-sidebar-active: #047857;
+  --color-focus-ring: #047857;
+}
+
+[data-theme="emerald_gold"][data-mode="dark"] {
+  --color-primary: #059669;
+  --color-primary-hover: #10B981;
+  --color-secondary: #022C22;
+  --color-accent: #E5C158;
+  --color-accent-hover: #F3D274;
+  --color-background: #021B14;
+  --color-surface: #062D23;
+  --color-surface-elevated: #0B3D30;
+  --color-text: #F3F4F6;
+  --color-text-muted: #9CA3AF;
+  --color-border: #134E40;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-sidebar: #01140E;
+  --color-sidebar-text: #D1FAE5;
+  --color-sidebar-active: #059669;
+  --color-focus-ring: #10B981;
+}
+
+/* --------------------------------------------------------------------------
+   THEME B: Navy & Cyan
+   Technology, clarity, professionalism
+   -------------------------------------------------------------------------- */
+[data-theme="navy_cyan"][data-mode="light"] {
+  --color-primary: #0B1F3A;
+  --color-primary-hover: #162E4F;
+  --color-secondary: #1E3A8A;
+  --color-accent: #00B4D8;
+  --color-accent-hover: #0096C7;
+  --color-background: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #F1F5F9;
+  --color-text: #0F172A;
+  --color-text-muted: #475569;
+  --color-border: #E2E8F0;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-sidebar: #0B1F3A;
+  --color-sidebar-text: #E0F2FE;
+  --color-sidebar-active: #1E3A8A;
+  --color-focus-ring: #00B4D8;
+}
+
+[data-theme="navy_cyan"][data-mode="dark"] {
+  --color-primary: #38BDF8;
+  --color-primary-hover: #0EA5E9;
+  --color-secondary: #0F2A4A;
+  --color-accent: #00D4FF;
+  --color-accent-hover: #38E1FF;
+  --color-background: #061120;
+  --color-surface: #0B1F3A;
+  --color-surface-elevated: #112D52;
+  --color-text: #F8FAFC;
+  --color-text-muted: #94A3B8;
+  --color-border: #1E3A60;
+  --color-success: #34D399;
+  --color-warning: #FBBF24;
+  --color-danger: #F87171;
+  --color-sidebar: #040A14;
+  --color-sidebar-text: #BAE6FD;
+  --color-sidebar-active: #0B1F3A;
+  --color-focus-ring: #00D4FF;
+}
+
+/* --------------------------------------------------------------------------
+   THEME C: Charcoal & Electric Blue
+   Modern, sophisticated, technical
+   -------------------------------------------------------------------------- */
+[data-theme="charcoal_electric_blue"][data-mode="light"] {
+  --color-primary: #18181B;
+  --color-primary-hover: #27272A;
+  --color-secondary: #3F3F46;
+  --color-accent: #3B82F6;
+  --color-accent-hover: #2563EB;
+  --color-background: #F4F4F5;
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #E4E4E7;
+  --color-text: #18181B;
+  --color-text-muted: #52525B;
+  --color-border: #D4D4D8;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-sidebar: #18181B;
+  --color-sidebar-text: #F4F4F5;
+  --color-sidebar-active: #27272A;
+  --color-focus-ring: #3B82F6;
+}
+
+[data-theme="charcoal_electric_blue"][data-mode="dark"] {
+  --color-primary: #60A5FA;
+  --color-primary-hover: #93C5FD;
+  --color-secondary: #27272A;
+  --color-accent: #3B82F6;
+  --color-accent-hover: #60A5FA;
+  --color-background: #121214;
+  --color-surface: #18181B;
+  --color-surface-elevated: #27272A;
+  --color-text: #F4F4F5;
+  --color-text-muted: #A1A1AA;
+  --color-border: #3F3F46;
+  --color-success: #34D399;
+  --color-warning: #FBBF24;
+  --color-danger: #F87171;
+  --color-sidebar: #0E0E10;
+  --color-sidebar-text: #E4E4E7;
+  --color-sidebar-active: #27272A;
+  --color-focus-ring: #3B82F6;
+}
+
+/* --------------------------------------------------------------------------
+   THEME D: Black & Lime
+   Bold, high-contrast, energetic
+   -------------------------------------------------------------------------- */
+[data-theme="black_lime"][data-mode="light"] {
+  --color-primary: #111111;
+  --color-primary-hover: #262626;
+  --color-secondary: #404040;
+  --color-accent: #84CC16;
+  --color-accent-hover: #65A30D;
+  --color-background: #F8F8F8;
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #EEEEEE;
+  --color-text: #111111;
+  --color-text-muted: #525252;
+  --color-border: #E5E5E5;
+  --color-success: #16A34A;
+  --color-warning: #D97706;
+  --color-danger: #DC2626;
+  --color-sidebar: #111111;
+  --color-sidebar-text: #FFFFFF;
+  --color-sidebar-active: #262626;
+  --color-focus-ring: #84CC16;
+}
+
+[data-theme="black_lime"][data-mode="dark"] {
+  --color-primary: #B6FF00;
+  --color-primary-hover: #C9FF33;
+  --color-secondary: #1C1C1C;
+  --color-accent: #B6FF00;
+  --color-accent-hover: #CEFF4D;
+  --color-background: #0A0A0A;
+  --color-surface: #141414;
+  --color-surface-elevated: #1F1F1F;
+  --color-text: #FAFAFA;
+  --color-text-muted: #A3A3A3;
+  --color-border: #2E2E2E;
+  --color-success: #4ADE80;
+  --color-warning: #FBBF24;
+  --color-danger: #F87171;
+  --color-sidebar: #050505;
+  --color-sidebar-text: #FAFAFA;
+  --color-sidebar-active: #1F1F1F;
+  --color-focus-ring: #B6FF00;
+}
+
+/* --------------------------------------------------------------------------
+   THEME E: Orange & Navy
+   Distinctive, confident, professional
+   -------------------------------------------------------------------------- */
+[data-theme="orange_navy"][data-mode="light"] {
+  --color-primary: #102A43;
+  --color-primary-hover: #1E3A8A;
+  --color-secondary: #243B53;
+  --color-accent: #FF6B00;
+  --color-accent-hover: #E65C00;
+  --color-background: #F9FAFB;
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #F0F4F8;
+  --color-text: #102A43;
+  --color-text-muted: #486581;
+  --color-border: #D9E2EC;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-sidebar: #102A43;
+  --color-sidebar-text: #F0F4F8;
+  --color-sidebar-active: #243B53;
+  --color-focus-ring: #FF6B00;
+}
+
+[data-theme="orange_navy"][data-mode="dark"] {
+  --color-primary: #FF7B1A;
+  --color-primary-hover: #FFA259;
+  --color-secondary: #102A43;
+  --color-accent: #FF6B00;
+  --color-accent-hover: #FF8533;
+  --color-background: #0A1926;
+  --color-surface: #102A43;
+  --color-surface-elevated: #183C60;
+  --color-text: #F0F4F8;
+  --color-text-muted: #9FB3C8;
+  --color-border: #243B53;
+  --color-success: #34D399;
+  --color-warning: #FBBF24;
+  --color-danger: #F87171;
+  --color-sidebar: #050D14;
+  --color-sidebar-text: #F0F4F8;
+  --color-sidebar-active: #102A43;
+  --color-focus-ring: #FF6B00;
+}
+
+/* --------------------------------------------------------------------------
+   THEME F: Purple & Pink
+   Creative and modern
+   -------------------------------------------------------------------------- */
+[data-theme="purple_pink"][data-mode="light"] {
+  --color-primary: #6C2BD9;
+  --color-primary-hover: #5B21B6;
+  --color-secondary: #4C1D95;
+  --color-accent: #EC4899;
+  --color-accent-hover: #DB2777;
+  --color-background: #FAF7FD;
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #F3E8FF;
+  --color-text: #1E1B4B;
+  --color-text-muted: #581C87;
+  --color-border: #E9D5FF;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-sidebar: #4C1D95;
+  --color-sidebar-text: #F5F3FF;
+  --color-sidebar-active: #6C2BD9;
+  --color-focus-ring: #EC4899;
+}
+
+[data-theme="purple_pink"][data-mode="dark"] {
+  --color-primary: #A78BFA;
+  --color-primary-hover: #C4B5FD;
+  --color-secondary: #4C1D95;
+  --color-accent: #FF4FA3;
+  --color-accent-hover: #FF70B8;
+  --color-background: #140727;
+  --color-surface: #220B42;
+  --color-surface-elevated: #32125E;
+  --color-text: #FAF5FF;
+  --color-text-muted: #D8B4FE;
+  --color-border: #4C1D95;
+  --color-success: #34D399;
+  --color-warning: #FBBF24;
+  --color-danger: #F87171;
+  --color-sidebar: #0C0318;
+  --color-sidebar-text: #F5F3FF;
+  --color-sidebar-active: #2E0E59;
+  --color-focus-ring: #FF4FA3;
+}
+
+/* --------------------------------------------------------------------------
+   THEME G: Red & Cream
+   Bold, warm, editorial
+   -------------------------------------------------------------------------- */
+[data-theme="red_cream"][data-mode="light"] {
+  --color-primary: #D72638;
+  --color-primary-hover: #B51F2F;
+  --color-secondary: #7F1D1D;
+  --color-accent: #F97316;
+  --color-accent-hover: #EA580C;
+  --color-background: #FFFDF9;
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #FFF3E0;
+  --color-text: #27272A;
+  --color-text-muted: #57534E;
+  --color-border: #E7E5E4;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #D72638;
+  --color-sidebar: #7F1D1D;
+  --color-sidebar-text: #FFF3E0;
+  --color-sidebar-active: #D72638;
+  --color-focus-ring: #D72638;
+}
+
+[data-theme="red_cream"][data-mode="dark"] {
+  --color-primary: #F87171;
+  --color-primary-hover: #FCA5A5;
+  --color-secondary: #450A0A;
+  --color-accent: #FB923C;
+  --color-accent-hover: #FDBA74;
+  --color-background: #1A0A0C;
+  --color-surface: #260F12;
+  --color-surface-elevated: #36171B;
+  --color-text: #FFF3E0;
+  --color-text-muted: #D6D3D1;
+  --color-border: #4C1D21;
+  --color-success: #34D399;
+  --color-warning: #FBBF24;
+  --color-danger: #EF4444;
+  --color-sidebar: #100507;
+  --color-sidebar-text: #FFF3E0;
+  --color-sidebar-active: #260F12;
+  --color-focus-ring: #F87171;
+}
+
+/* --------------------------------------------------------------------------
+   THEME H: Golden Yellow, Electric Violet & Soft Ivory
+   Playful, premium, vibrant
+   -------------------------------------------------------------------------- */
+[data-theme="golden_violet"][data-mode="light"] {
+  --color-primary: #7357D8;
+  --color-primary-hover: #5F43C3;
+  --color-secondary: #48329D;
+  --color-accent: #E5AC00;
+  --color-accent-hover: #CC9900;
+  --color-background: #FAF9F5;
+  --color-surface: #F8F7F2;
+  --color-surface-elevated: #EDECE4;
+  --color-text: #1E1B4B;
+  --color-text-muted: #4B4870;
+  --color-border: #DFDCD0;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-sidebar: #48329D;
+  --color-sidebar-text: #FAF9F5;
+  --color-sidebar-active: #7357D8;
+  --color-focus-ring: #7357D8;
+}
+
+[data-theme="golden_violet"][data-mode="dark"] {
+  --color-primary: #987FFF;
+  --color-primary-hover: #B09CFF;
+  --color-secondary: #3B2588;
+  --color-accent: #FFD84D;
+  --color-accent-hover: #FFE27A;
+  --color-background: #100C22;
+  --color-surface: #1B1536;
+  --color-surface-elevated: #281F4D;
+  --color-text: #F8F7F2;
+  --color-text-muted: #AFA8D4;
+  --color-border: #3A2E69;
+  --color-success: #34D399;
+  --color-warning: #FBBF24;
+  --color-danger: #F87171;
+  --color-sidebar: #0A0717;
+  --color-sidebar-text: #F8F7F2;
+  --color-sidebar-active: #201840;
+  --color-focus-ring: #FFD84D;
+}
+
+/* --------------------------------------------------------------------------
+   THEME I: Forest Green, Blush Pink & Warm Ivory
+   Natural, calm, wellness-oriented
+   -------------------------------------------------------------------------- */
+[data-theme="forest_blush"][data-mode="light"] {
+  --color-primary: #315C4C;
+  --color-primary-hover: #264A3D;
+  --color-secondary: #1E3B30;
+  --color-accent: #E08597;
+  --color-accent-hover: #CE6F82;
+  --color-background: #FFFDF9;
+  --color-surface: #FFF7E8;
+  --color-surface-elevated: #F5ECE0;
+  --color-text: #192B23;
+  --color-text-muted: #455E54;
+  --color-border: #E4DAC8;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-sidebar: #1E3B30;
+  --color-sidebar-text: #FFF7E8;
+  --color-sidebar-active: #315C4C;
+  --color-focus-ring: #315C4C;
+}
+
+[data-theme="forest_blush"][data-mode="dark"] {
+  --color-primary: #528C75;
+  --color-primary-hover: #69A38D;
+  --color-secondary: #142820;
+  --color-accent: #F2A7B5;
+  --color-accent-hover: #F8C3CD;
+  --color-background: #091410;
+  --color-surface: #10221B;
+  --color-surface-elevated: #18332A;
+  --color-text: #F9F7F1;
+  --color-text-muted: #9AB2A8;
+  --color-border: #23473B;
+  --color-success: #34D399;
+  --color-warning: #FBBF24;
+  --color-danger: #F87171;
+  --color-sidebar: #050B09;
+  --color-sidebar-text: #F9F7F1;
+  --color-sidebar-active: #132A22;
+  --color-focus-ring: #F2A7B5;
+}
+
+/* --------------------------------------------------------------------------
+   THEME J: Royal Plum, Mint Mist & Vanilla Cream
+   Elegant, calm, distinctive
+   -------------------------------------------------------------------------- */
+[data-theme="royal_plum_mint"][data-mode="light"] {
+  --color-primary: #593C8F;
+  --color-primary-hover: #482F75;
+  --color-secondary: #351F5B;
+  --color-accent: #3BA983;
+  --color-accent-hover: #2D8B6B;
+  --color-background: #FAF8F4;
+  --color-surface: #FAF6EE;
+  --color-surface-elevated: #EFEADB;
+  --color-text: #23173B;
+  --color-text-muted: #554473;
+  --color-border: #DFD8C7;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-sidebar: #351F5B;
+  --color-sidebar-text: #FAF6EE;
+  --color-sidebar-active: #593C8F;
+  --color-focus-ring: #593C8F;
+}
+
+[data-theme="royal_plum_mint"][data-mode="dark"] {
+  --color-primary: #8664C2;
+  --color-primary-hover: #9E81D4;
+  --color-secondary: #2A1747;
+  --color-accent: #A8D5BA;
+  --color-accent-hover: #C2E4CF;
+  --color-background: #110A1C;
+  --color-surface: #1B102D;
+  --color-surface-elevated: #281942;
+  --color-text: #FAF6EE;
+  --color-text-muted: #B3A5CA;
+  --color-border: #3A255B;
+  --color-success: #34D399;
+  --color-warning: #FBBF24;
+  --color-danger: #F87171;
+  --color-sidebar: #0A0612;
+  --color-sidebar-text: #FAF6EE;
+  --color-sidebar-active: #201336;
+  --color-focus-ring: #A8D5BA;
+}
+
+/* ==========================================================================
+   GLOBAL APP STYLING & ACCESSIBILITY FOCUS
+   ========================================================================== */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+/* Smooth theme transitions */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* TipTap Editor Styling */
+.tiptap {
+  min-height: 180px;
+  outline: none;
+}
+.tiptap p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+.tiptap ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.tiptap ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* React Big Calendar Theme Integration */
+.rbc-calendar {
+  font-family: inherit;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+}
+.rbc-header {
+  border-bottom: 1px solid var(--color-border) !important;
+  padding: 8px 4px !important;
+  font-weight: 600;
+  color: var(--color-text);
+}
+.rbc-day-bg + .rbc-day-bg, .rbc-month-row + .rbc-month-row {
+  border-color: var(--color-border) !important;
+}
+.rbc-off-range-bg {
+  background: var(--color-background) !important;
+  opacity: 0.6;
+}
+.rbc-today {
+  background-color: var(--color-surface-elevated) !important;
+}
+.rbc-event {
+  background-color: var(--color-primary) !important;
+  color: #FFFFFF !important;
+  border-radius: 4px !important;
+  padding: 2px 6px !important;
+  font-size: 0.78rem !important;
+}
+.rbc-toolbar button {
+  color: var(--color-text) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 6px !important;
+}
+.rbc-toolbar button:hover, .rbc-toolbar button.rbc-active {
+  background-color: var(--color-surface-elevated) !important;
+  color: var(--color-primary) !important;
+}
+
+/* ==========================================================================
+   CLAYMORPHISM DESIGN SYSTEM EXTENSION
+   Tactile, 3D Inflated Soft Elements with Adaptive Light/Dark Lighting
+   ========================================================================== */
+
+/* Base Clay Card */
+.clay-card {
+  background-color: var(--color-surface);
+  border-radius: 1.25rem;
+  box-shadow:
+    0 12px 28px -6px rgba(0, 0, 0, 0.07),
+    0 4px 10px -2px rgba(0, 0, 0, 0.04),
+    inset 4px 4px 8px rgba(255, 255, 255, 0.75),
+    inset -4px -4px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+}
+
+.clay-card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 18px 32px -8px rgba(0, 0, 0, 0.1),
+    0 6px 14px -3px rgba(0, 0, 0, 0.05),
+    inset 5px 5px 10px rgba(255, 255, 255, 0.85),
+    inset -5px -5px 10px rgba(0, 0, 0, 0.05);
+}
+
+[data-mode="dark"] .clay-card {
+  background-color: var(--color-surface-elevated);
+  box-shadow:
+    0 14px 30px -6px rgba(0, 0, 0, 0.5),
+    0 6px 12px -2px rgba(0, 0, 0, 0.35),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.07),
+    inset -4px -4px 8px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+[data-mode="dark"] .clay-card:hover {
+  box-shadow:
+    0 20px 36px -8px rgba(0, 0, 0, 0.6),
+    0 8px 16px -3px rgba(0, 0, 0, 0.4),
+    inset 4px 4px 8px rgba(255, 255, 255, 0.09),
+    inset -5px -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Primary Inflated Clay Card */
+.clay-card-primary {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+  color: #FFFFFF;
+  border-radius: 1.25rem;
+  box-shadow:
+    0 14px 28px -6px rgba(0, 0, 0, 0.18),
+    0 4px 10px -2px rgba(0, 0, 0, 0.08),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.35),
+    inset -4px -4px 8px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+}
+
+.clay-card-primary:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 18px 34px -6px rgba(0, 0, 0, 0.22),
+    inset 4px 4px 8px rgba(255, 255, 255, 0.45),
+    inset -5px -5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Clay Button */
+.clay-btn {
+  border-radius: 0.875rem;
+  box-shadow:
+    0 6px 14px -3px rgba(0, 0, 0, 0.12),
+    0 2px 6px -1px rgba(0, 0, 0, 0.06),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.4),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.15);
+  transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.clay-btn:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 8px 18px -4px rgba(0, 0, 0, 0.16),
+    0 3px 8px -1px rgba(0, 0, 0, 0.08),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.5),
+    inset -3px -3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.clay-btn:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow:
+    0 2px 5px -1px rgba(0, 0, 0, 0.1),
+    inset 3px 3px 6px rgba(0, 0, 0, 0.2),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.2);
+}
+
+/* Clay Badges */
+.clay-badge {
+  border-radius: 9999px;
+  box-shadow:
+    0 3px 6px -1px rgba(0, 0, 0, 0.08),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.5),
+    inset -1px -1px 2px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+[data-mode="dark"] .clay-badge {
+  box-shadow:
+    0 3px 6px -1px rgba(0, 0, 0, 0.4),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+    inset -1px -1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Clay Inset Input */
+.clay-input {
+  background-color: var(--color-surface);
+  border-radius: 0.875rem;
+  box-shadow:
+    inset 3px 3px 6px rgba(0, 0, 0, 0.06),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--color-border);
+  transition: all 0.2s ease;
+}
+
+[data-mode="dark"] .clay-input {
+  box-shadow:
+    inset 3px 3px 6px rgba(0, 0, 0, 0.4),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.04);
+}
+
+.clay-input:focus {
+  box-shadow:
+    inset 2px 2px 4px rgba(0, 0, 0, 0.08),
+    0 0 0 3px var(--color-focus-ring);
+}
+
+/* Clay Stat Box */
+.clay-stat {
+  background: var(--color-surface);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  box-shadow:
+    0 10px 24px -5px rgba(0, 0, 0, 0.06),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.7),
+    inset -3px -3px 6px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.clay-stat:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 16px 28px -6px rgba(0, 0, 0, 0.09),
+    inset 4px 4px 8px rgba(255, 255, 255, 0.8),
+    inset -4px -4px 8px rgba(0, 0, 0, 0.04);
+}
+
+[data-mode="dark"] .clay-stat {
+  background: var(--color-surface-elevated);
+  box-shadow:
+    0 12px 24px -5px rgba(0, 0, 0, 0.45),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.06),
+    inset -3px -3px 6px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}

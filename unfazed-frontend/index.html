@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/unfazed-logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNFAZED — The Practice Operating System for Modern Therapists</title>
+    <meta name="description" content="Manage your therapy practice through one branded link. Scheduling, client intake, payments, clinical documentation, and client communication for therapists in India." />
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+      // Early theme initialization to prevent flash
+      (function() {
+        try {
+          var savedTheme = localStorage.getItem('unfazed_theme') || 'emerald_gold';
+          var savedMode = localStorage.getItem('unfazed_mode') || 'system';
+          var activeMode = savedMode;
+          if (savedMode === 'system') {
+            activeMode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          document.documentElement.setAttribute('data-theme', savedTheme);
+          document.documentElement.setAttribute('data-mode', activeMode);
+          if (activeMode === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-background text-text antialiased min-h-screen selection:bg-accent/20 selection:text-text transition-colors duration-150">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

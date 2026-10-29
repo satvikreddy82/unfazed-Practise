@@ -8,8 +8,11 @@ export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(() => localStorage.getItem('unfazed_token'));
   const [loading, setLoading] = useState(true);
 
-  // Configure axios default header
+  // Configure axios base URL and authorization header
   useEffect(() => {
+    if (import.meta.env.VITE_API_URL) {
+      axios.defaults.baseURL = import.meta.env.VITE_API_URL;
+    }
     if (token) {
       axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
       localStorage.setItem('unfazed_token', token);
